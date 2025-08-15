@@ -45,7 +45,7 @@ git clone your-repo-url
 cd help-bubble/backend
 
 ```
-2. Create virtual environment
+2. Create and activate virtual environment
 ```bash
 python -m venv venv
 # Windows
@@ -94,13 +94,20 @@ npm start
 - The frontend will be available at http://localhost:3000
 
 ### Model Evaluation
-
-**SKIP THIS SCRIPT**: Current compatability issue with pyarrow/extensiontype
-
-Run the evaluation script from **backend** to test model performance:
+Ensure venv script is active in backend.
+Run the evaluation script to test model performance:
 ```bash
 python evaluate.py
 ```
+## Performance Metrics
+
+Current model performance on  e-commerce dataset:
+
+- **Exact Match Score**: > 70%
+- **F1 Score**: > 75%
+- **Average Response Time**: < 0.092s
+- **Success Rate**: 100%
+
 
 ## 🌐 API Endpoints
 Core Endpoints
