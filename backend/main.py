@@ -21,23 +21,16 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS middleware - Fixed version
-allowed_origins = os.getenv("ALLOWED_ORIGINS", "*")
-if allowed_origins != "*":
-    # Split comma-separated origins and strip whitespace
-    origins_list = [origin.strip() for origin in allowed_origins.split(",")]
-else:
-    # Allow all origins for development/testing
-    origins_list = ["*"]
+# Get allowed origins from environment variable
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+logger.info(f"CORS allowed origins: {allowed_origins}")
 
-logger.info(f"CORS allowed origins: {origins_list}")
-
-# CORS middleware
+# CORS middleware - this was broken in your original code
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins_list,  # In production,
+    allow_origins=allowed_origins,  # Use environment variable or allow all
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
 )
 
@@ -175,3 +168,14 @@ async def test_with_context(context: str, question: str):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
+# debugging purpose:
+@app.get("/")
+async def root():
+    """Root endpoint"""
+    return {
+        "message": "HelpBubble API is running!",
+        "docs_url": "/docs",
+        "health_url": "/health"
+    }
