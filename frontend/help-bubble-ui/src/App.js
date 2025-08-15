@@ -258,7 +258,7 @@ function App() {
       timestamp: new Date().toLocaleTimeString(),
       confidence: 1.0
     }]);
-  }, []);
+  }, []); // NOTE: hook's missing dependency currently: remoce or inlcude in dep ARR
 
   useEffect(() => {
     scrollToBottom();

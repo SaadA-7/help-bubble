@@ -1,4 +1,4 @@
-# FastAPI app with QA pipeline
+# python env, FastAPI app with QA pipeline
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware

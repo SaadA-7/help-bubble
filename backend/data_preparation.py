@@ -1,4 +1,4 @@
-# E-commerce dataset creation. If monitization desired, simply
+# FastAPI env, E-commerce dataset creation. If monitization desired, simply
 # train the the dataset with desired client(s) data set for fine tune use.
 
 import json
