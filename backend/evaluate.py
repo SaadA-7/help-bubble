@@ -1,7 +1,4 @@
 # Model evaluator with EM & F1 scores
-# VERSION COMPATIBILITY ISSUE:
-# - datasets lib using PyExtensionType from pyarrow, but pyarrow doesn't have
-# - that attribute bc renamed to ExtensionType
 
 import json
 import os
