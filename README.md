@@ -95,9 +95,99 @@ npm start
 
 ### Model Evaluation
 
+**SKIP THIS SCRIPT**: Current compatability issue with pyarrow/extensiontype
+
 Run the evaluation script from **backend** to test model performance:
 ```bash
 python evaluate.py
 ```
+
+## 🌐 API Endpoints
+
+## Core Endpoints
+- POST /ask - Submit a question and get an answer
+- GET /health - Check API health status
+- GET /contexts - List available knowledge base contexts
+- POST /test-context - Test with custom context and question
+
+Example API Usage:
+```bash
+import requests
+
+# Ask a question
+response = requests.post("http://localhost:8000/ask", json={
+  "question": "How long do I have to return an item?",
+    user_id": "user123"
+})
+
+print(response.json())
+# {
+#   "answer": "30 days",
+#   "confidence": 0.98,
+#   "context_used": "Our return policy allows...",
+#   "response_time": 0.15,
+#   "timestamp": "2024-01-15T10:30:00"
+# }
+```
+
+## 🚀 Deployment
+
+TODO
+
+## 📊 Knowledge Base
+The system includes pre-built knowledge for:
+
+- **Returns & Refunds**: 30-day return policy, conditions, processing times
+- **Shipping**: Free shipping thresholds, delivery times, tracking
+- **Payment**: Accepted methods, security, verification
+- **Product Warranties**: Coverage periods, claim process
+- **Account Management**: Registration, password reset, benefits
+- **Promotions: Discounts**, student deals, seasonal sales
+
+## Technical Highlights
+- **Modern ML Pipeline**: Transformer models with Hugging Face integration
+- **Full-Stack Development**: React frontend + FastAPI backend
+- **Production Architecture**: RESTful APIs, error handling, monitoring
+- **Performance Optimization**: Model evaluation, response time tracking
+- **Cloud Deployment**: Containerized deployment on modern platforms
+
+## Buisness Value
+- **Customer Support Automation**: Reduces support ticket volume
+- **24/7 Availability**: Instant responses to common questions
+- **Scalable Solution**: Handles multiple concurrent users
+- **Analytics Ready**: Tracks usage patterns and performance metrics
+- **Cost Effective**: Reduces human support agent workload
+
+## 🔍 Testing the System
+
+**Example Questions to Try**
+
+**Returns**: "How long do I have to return an item?"
+**Shipping**: "When is shipping free?"
+**Payment**: "What payment methods do you accept?"
+**Warranty**: "What warranty comes with electronics?"
+**Account**: "How do I reset my password?"
+**Promotions**: "Do you offer student discounts?"
+
+**Expected Performance**
+- **Response time**: < 200ms for most queries
+- **Availability**: 99.9% uptime in production
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (git checkout -b feature/amazing-feature)
+3. Commit your changes (git commit -m 'Add amazing feature')
+4. Push to the branch (git push origin feature/amazing-feature)
+5. Open a Pull Request
+
+## 📝 License
+Copyright © 2025 Saad Ahmad. All rights reserved.
+Licensed under the Help-Bubble Custom License (see LICENSE file for details).
+
+## NLP & ML Project
+This project demonstrates practical application of transformer-based NLP models in a real-world customer support scenario, showcasing both technical depth and business value.
+
+
 
 
