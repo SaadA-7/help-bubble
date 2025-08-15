@@ -27,8 +27,10 @@ Built for researching Natural Language Processing. An intelligent customer suppo
 - SQuAD Dataset - Question answering benchmark
 - Hugging Face Hub - Model hosting and management
 
+
 ## 📁 Project Structure
 TO BE ADDED
+
 
 ## 🔧 Installation & Setup
 
@@ -90,3 +92,12 @@ npm start
 
 ```
 - The frontend will be available at http://localhost:3000
+
+### Model Evaluation
+
+Run the evaluation script from **backend** to test model performance:
+```bash
+python evaluate.py
+```
+
+
