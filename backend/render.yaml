@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: helpbubble-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: TRANSFORMERS_CACHE
+        value: /tmp/transformers_cache
+      - key: HF_HOME
+        value: /tmp/huggingface
+    disk:
+      name: helpbubble-models
+      sizeGB: 1
+      mountPath: /tmp
