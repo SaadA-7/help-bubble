@@ -10,6 +10,7 @@ import os
 from typing import List, Dict, Optional
 import logging
 from datetime import datetime
+import traceback
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -36,11 +37,22 @@ app.add_middleware(
 
 # Load pre-trained QA model
 MODEL_NAME = "distilbert-base-cased-distilled-squad"
+qa_pipeline = None
+
 try:
-    qa_pipeline = pipeline("question-answering", model=MODEL_NAME, tokenizer=MODEL_NAME)
+    logger.info(f"Starting to load model: {MODEL_NAME}")
+    logger.info(f"Available device: {'cuda' if torch.cuda.is_available() else 'cpu'}")
+    logger.info(f"PyTorch version: {torch.__version__}")
+    
+    # Force CPU usage on Render (free tier doesn't have GPU)
+    qa_pipeline = pipeline("question-answering", 
+                          model=MODEL_NAME, 
+                          tokenizer=MODEL_NAME,
+                          device=-1)  # Force CPU
     logger.info(f"Successfully loaded model: {MODEL_NAME}")
 except Exception as e:
-    logger.error(f"Error loading model: {e}")
+    logger.error(f"Error loading model: {str(e)}")
+    logger.error(f"Full traceback: {traceback.format_exc()}")
     qa_pipeline = None
 
 # E-commerce knowledge base: example for now can update later for real world use.
@@ -97,24 +109,61 @@ def find_best_context(question: str) -> str:
 async def ask_question(request: QuestionRequest):
     """Process a customer question and return an answer"""
     try:
+        logger.info(f"=== NEW REQUEST ===")
+        logger.info(f"Received question: {request.question}")
+        logger.info(f"User ID: {request.user_id}")
+        logger.info(f"Custom context provided: {bool(request.context)}")
+        
         start_time = datetime.now()
         
+        # Check if model is loaded
         if not qa_pipeline:
-            raise HTTPException(status_code=500, detail="QA model not loaded")
+            logger.error("QA model is not loaded! Cannot process request.")
+            raise HTTPException(
+                status_code=500, 
+                detail="AI model is not available. Please try again later."
+            )
+        
+        logger.info("Model is loaded, processing question...")
         
         # Use provided context or find the best matching context
-        context = request.context if request.context else find_best_context(request.question)
+        if request.context:
+            context = request.context
+            logger.info("Using custom context provided by user")
+        else:
+            context = find_best_context(request.question)
+            logger.info(f"Found best context category, context length: {len(context)}")
+        
+        # Log context preview
+        logger.info(f"Context preview: {context[:100]}...")
         
         # Get answer from the model
-        result = qa_pipeline(question=request.question, context=context)
+        logger.info("Calling qa_pipeline with question and context...")
+        
+        try:
+            result = qa_pipeline(question=request.question, context=context)
+            logger.info(f"Pipeline successful! Result keys: {list(result.keys())}")
+            logger.info(f"Answer: {result.get('answer', 'NO ANSWER')}")
+            logger.info(f"Confidence: {result.get('score', 'NO SCORE')}")
+            
+        except Exception as pipeline_error:
+            logger.error(f"Pipeline execution failed: {str(pipeline_error)}")
+            logger.error(f"Pipeline error type: {type(pipeline_error)}")
+            logger.error(f"Pipeline traceback: {traceback.format_exc()}")
+            raise HTTPException(
+                status_code=500,
+                detail=f"AI processing failed: {str(pipeline_error)}"
+            )
         
         end_time = datetime.now()
         response_time = (end_time - start_time).total_seconds()
         
-        # Log the interaction
-        logger.info(f"Question: {request.question[:100]}... | Answer: {result['answer']} | Confidence: {result['score']:.3f}")
+        # Log the successful interaction
+        logger.info(f"SUCCESS - Question processed in {response_time:.3f}s")
+        logger.info(f"Final answer: {result['answer']}")
+        logger.info(f"Final confidence: {result['score']:.3f}")
         
-        return QuestionResponse(
+        response = QuestionResponse(
             answer=result['answer'],
             confidence=result['score'],
             context_used=context[:200] + "..." if len(context) > 200 else context,
@@ -122,18 +171,39 @@ async def ask_question(request: QuestionRequest):
             timestamp=datetime.now().isoformat()
         )
         
+        logger.info("=== REQUEST COMPLETED SUCCESSFULLY ===")
+        return response
+        
+    except HTTPException as he:
+        # Re-raise HTTP exceptions (they're already handled)
+        logger.error(f"HTTP Exception: {he.detail}")
+        raise he
+        
     except Exception as e:
-        logger.error(f"Error processing question: {e}")
-        raise HTTPException(status_code=500, detail=f"Error processing question: {str(e)}")
+        logger.error(f"=== UNEXPECTED ERROR ===")
+        logger.error(f"Error type: {type(e).__name__}")
+        logger.error(f"Error message: {str(e)}")
+        logger.error(f"Full traceback: {traceback.format_exc()}")
+        logger.error(f"=== END ERROR LOG ===")
+        
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Unexpected error: {str(e)}"
+        )
 
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
+    model_status = qa_pipeline is not None
+    logger.info(f"Health check - Model loaded: {model_status}")
+    
     return {
-        "status": "healthy",
-        "model_loaded": qa_pipeline is not None,
-        "model_name": MODEL_NAME,
-        "timestamp": datetime.now().isoformat()
+        "status": "healthy" if model_status else "degraded",
+        "model_loaded": model_status,
+        "model_name": MODEL_NAME if model_status else "Not loaded",
+        "timestamp": datetime.now().isoformat(),
+        "pytorch_version": torch.__version__,
+        "device": "cuda" if torch.cuda.is_available() else "cpu"
     }
 
 @app.get("/contexts")
@@ -163,19 +233,19 @@ async def test_with_context(context: str, question: str):
         }
         
     except Exception as e:
+        logger.error(f"Test context error: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-# debugging purpose:
 @app.get("/")
 async def root():
     """Root endpoint"""
     return {
         "message": "HelpBubble API is running!",
         "docs_url": "/docs",
-        "health_url": "/health"
+        "health_url": "/health",
+        "model_loaded": qa_pipeline is not None
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
