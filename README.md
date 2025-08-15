@@ -103,8 +103,7 @@ python evaluate.py
 ```
 
 ## 🌐 API Endpoints
-
-## Core Endpoints
+Core Endpoints
 - POST /ask - Submit a question and get an answer
 - GET /health - Check API health status
 - GET /contexts - List available knowledge base contexts
