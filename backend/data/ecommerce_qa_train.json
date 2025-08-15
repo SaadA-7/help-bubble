@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ecomm_3",
+    "context": "Our return policy allows customers to return items within 30 days of purchase. Items must be in original condition with tags attached. Electronics must include all original accessories and packaging. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a return, log into your account and click 'Return Item' next to your order.",
+    "question": "How do I start a return?",
+    "answer": {
+      "text": "Our return policy allows customers to return items within 30 days of purchase.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_34",
+    "context": "Our customer service team is available 24/7 through live chat, email, and phone. Live chat is the fastest way to get help and is available on every page. Email support typically responds within 2 hours during business days. For urgent issues, call our toll-free number. We also have an extensive FAQ section and video tutorials.",
+    "question": "Where can I find help videos?",
+    "answer": {
+      "text": "Our customer service team is available 24/7 through live chat, email, and phone.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_17",
+    "context": "All our products come with a manufacturer warranty that varies by product type. Electronics typically have a 1-year warranty. Clothing and accessories have a 90-day quality guarantee. Furniture comes with a 2-year warranty against defects. If you experience any issues, contact our support team with your order number.",
+    "question": "What about clothing guarantees?",
+    "answer": {
+      "text": "All our products come with a manufacturer warranty that varies by product type.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_45",
+    "context": "Product reviews help other customers make informed decisions. You can leave a review 3 days after your order is delivered. Reviews must be honest and based on your experience with the product. We don't allow fake reviews and may remove reviews that violate our guidelines. Verified purchase reviews are marked with a special badge.",
+    "question": "When can I leave a product review?",
+    "answer": {
+      "text": "Product reviews help other customers make informed decisions.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_24",
+    "context": "You can create an account during checkout or from our homepage by clicking 'Sign Up'. Account benefits include faster checkout, order tracking, exclusive member deals, and saved addresses. If you forget your password, click 'Forgot Password' on the login page and we'll send reset instructions to your email.",
+    "question": "Where do I sign up?",
+    "answer": {
+      "text": "You can create an account during checkout or from our homepage by clicking 'Sign Up'.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_26",
+    "context": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts. New customers get 10% off their first order when they sign up for our newsletter. Students get 15% off with a valid .edu email address. Military personnel receive a 10% discount with ID verification. Check our homepage for current promotions.",
+    "question": "How much do new customers save?",
+    "answer": {
+      "text": "10% off",
+      "answer_start": 102
+    }
+  },
+  {
+    "id": "ecomm_40",
+    "context": "We take data privacy seriously and follow industry-standard security practices. Your personal information is encrypted and never shared with third parties without your consent. You can view and update your privacy settings in your account dashboard. We only send marketing emails to subscribers who have opted in.",
+    "question": "How is my personal information protected?",
+    "answer": {
+      "text": "We take data privacy seriously and follow industry-standard security practices.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_14",
+    "context": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover. We also accept PayPal, Apple Pay, Google Pay, and Shop Pay. Payment is processed securely through our encrypted checkout system. For orders over $500, we may require additional verification for security purposes.",
+    "question": "Can I use Apple Pay?",
+    "answer": {
+      "text": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_7",
+    "context": "We offer free standard shipping on orders over $50. Standard shipping takes 3-5 business days. Express shipping costs $15.99 and takes 1-2 business days. Overnight shipping is available for $29.99. International shipping is available to most countries and takes 7-14 business days. You can track your order using the tracking number sent to your email.",
+    "question": "How much does express shipping cost?",
+    "answer": {
+      "text": "$15.99",
+      "answer_start": 118
+    }
+  },
+  {
+    "id": "ecomm_49",
+    "context": "Product reviews help other customers make informed decisions. You can leave a review 3 days after your order is delivered. Reviews must be honest and based on your experience with the product. We don't allow fake reviews and may remove reviews that violate our guidelines. Verified purchase reviews are marked with a special badge.",
+    "question": "What are the review guidelines?",
+    "answer": {
+      "text": "Product reviews help other customers make informed decisions.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_15",
+    "context": "All our products come with a manufacturer warranty that varies by product type. Electronics typically have a 1-year warranty. Clothing and accessories have a 90-day quality guarantee. Furniture comes with a 2-year warranty against defects. If you experience any issues, contact our support team with your order number.",
+    "question": "What warranty comes with products?",
+    "answer": {
+      "text": "All our products come with a manufacturer warranty that varies by product type.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_13",
+    "context": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover. We also accept PayPal, Apple Pay, Google Pay, and Shop Pay. Payment is processed securely through our encrypted checkout system. For orders over $500, we may require additional verification for security purposes.",
+    "question": "What happens with large orders?",
+    "answer": {
+      "text": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_16",
+    "context": "All our products come with a manufacturer warranty that varies by product type. Electronics typically have a 1-year warranty. Clothing and accessories have a 90-day quality guarantee. Furniture comes with a 2-year warranty against defects. If you experience any issues, contact our support team with your order number.",
+    "question": "How long is the electronics warranty?",
+    "answer": {
+      "text": "1-year warranty",
+      "answer_start": 109
+    }
+  },
+  {
+    "id": "ecomm_27",
+    "context": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts. New customers get 10% off their first order when they sign up for our newsletter. Students get 15% off with a valid .edu email address. Military personnel receive a 10% discount with ID verification. Check our homepage for current promotions.",
+    "question": "Is there a military discount?",
+    "answer": {
+      "text": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_25",
+    "context": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts. New customers get 10% off their first order when they sign up for our newsletter. Students get 15% off with a valid .edu email address. Military personnel receive a 10% discount with ID verification. Check our homepage for current promotions.",
+    "question": "Do you offer student discounts?",
+    "answer": {
+      "text": "15% off",
+      "answer_start": 179
+    }
+  },
+  {
+    "id": "ecomm_10",
+    "context": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover. We also accept PayPal, Apple Pay, Google Pay, and Shop Pay. Payment is processed securely through our encrypted checkout system. For orders over $500, we may require additional verification for security purposes.",
+    "question": "What payment methods do you accept?",
+    "answer": {
+      "text": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_0",
+    "context": "Our return policy allows customers to return items within 30 days of purchase. Items must be in original condition with tags attached. Electronics must include all original accessories and packaging. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a return, log into your account and click 'Return Item' next to your order.",
+    "question": "How long do I have to return an item?",
+    "answer": {
+      "text": "30 days",
+      "answer_start": 58
+    }
+  },
+  {
+    "id": "ecomm_9",
+    "context": "We offer free standard shipping on orders over $50. Standard shipping takes 3-5 business days. Express shipping costs $15.99 and takes 1-2 business days. Overnight shipping is available for $29.99. International shipping is available to most countries and takes 7-14 business days. You can track your order using the tracking number sent to your email.",
+    "question": "Do you ship internationally?",
+    "answer": {
+      "text": "We offer free standard shipping on orders over $50.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_42",
+    "context": "We take data privacy seriously and follow industry-standard security practices. Your personal information is encrypted and never shared with third parties without your consent. You can view and update your privacy settings in your account dashboard. We only send marketing emails to subscribers who have opted in.",
+    "question": "Where can I update privacy settings?",
+    "answer": {
+      "text": "We take data privacy seriously and follow industry-standard security practices.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_21",
+    "context": "You can create an account during checkout or from our homepage by clicking 'Sign Up'. Account benefits include faster checkout, order tracking, exclusive member deals, and saved addresses. If you forget your password, click 'Forgot Password' on the login page and we'll send reset instructions to your email.",
+    "question": "What are the benefits of having an account?",
+    "answer": {
+      "text": "You can create an account during checkout or from our homepage by clicking 'Sign Up'.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_33",
+    "context": "Our customer service team is available 24/7 through live chat, email, and phone. Live chat is the fastest way to get help and is available on every page. Email support typically responds within 2 hours during business days. For urgent issues, call our toll-free number. We also have an extensive FAQ section and video tutorials.",
+    "question": "Do you have a phone number?",
+    "answer": {
+      "text": "Our customer service team is available 24/7 through live chat, email, and phone.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_37",
+    "context": "Order modifications can be made within 30 minutes of placing the order. After that, the order enters processing and cannot be changed. To modify an order, log into your account and click 'Modify Order' if available, or contact customer service immediately. Cancellations are possible until the item ships.",
+    "question": "How do I cancel an order?",
+    "answer": {
+      "text": "Order modifications can be made within 30 minutes of placing the order.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_48",
+    "context": "Product reviews help other customers make informed decisions. You can leave a review 3 days after your order is delivered. Reviews must be honest and based on your experience with the product. We don't allow fake reviews and may remove reviews that violate our guidelines. Verified purchase reviews are marked with a special badge.",
+    "question": "How do reviews help other customers?",
+    "answer": {
+      "text": "Product reviews help other customers make informed decisions.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_12",
+    "context": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover. We also accept PayPal, Apple Pay, Google Pay, and Shop Pay. Payment is processed securely through our encrypted checkout system. For orders over $500, we may require additional verification for security purposes.",
+    "question": "Do you accept PayPal?",
+    "answer": {
+      "text": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_29",
+    "context": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts. New customers get 10% off their first order when they sign up for our newsletter. Students get 15% off with a valid .edu email address. Military personnel receive a 10% discount with ID verification. Check our homepage for current promotions.",
+    "question": "How do I get the newsletter discount?",
+    "answer": {
+      "text": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_41",
+    "context": "We take data privacy seriously and follow industry-standard security practices. Your personal information is encrypted and never shared with third parties without your consent. You can view and update your privacy settings in your account dashboard. We only send marketing emails to subscribers who have opted in.",
+    "question": "Do you share my data with others?",
+    "answer": {
+      "text": "We take data privacy seriously and follow industry-standard security practices.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_39",
+    "context": "Order modifications can be made within 30 minutes of placing the order. After that, the order enters processing and cannot be changed. To modify an order, log into your account and click 'Modify Order' if available, or contact customer service immediately. Cancellations are possible until the item ships.",
+    "question": "Where do I modify my order?",
+    "answer": {
+      "text": "Order modifications can be made within 30 minutes of placing the order.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_43",
+    "context": "We take data privacy seriously and follow industry-standard security practices. Your personal information is encrypted and never shared with third parties without your consent. You can view and update your privacy settings in your account dashboard. We only send marketing emails to subscribers who have opted in.",
+    "question": "Will you send me marketing emails?",
+    "answer": {
+      "text": "We take data privacy seriously and follow industry-standard security practices.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_44",
+    "context": "We take data privacy seriously and follow industry-standard security practices. Your personal information is encrypted and never shared with third parties without your consent. You can view and update your privacy settings in your account dashboard. We only send marketing emails to subscribers who have opted in.",
+    "question": "Is my payment information secure?",
+    "answer": {
+      "text": "We take data privacy seriously and follow industry-standard security practices.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_8",
+    "context": "We offer free standard shipping on orders over $50. Standard shipping takes 3-5 business days. Express shipping costs $15.99 and takes 1-2 business days. Overnight shipping is available for $29.99. International shipping is available to most countries and takes 7-14 business days. You can track your order using the tracking number sent to your email.",
+    "question": "How can I track my order?",
+    "answer": {
+      "text": "We offer free standard shipping on orders over $50.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_19",
+    "context": "All our products come with a manufacturer warranty that varies by product type. Electronics typically have a 1-year warranty. Clothing and accessories have a 90-day quality guarantee. Furniture comes with a 2-year warranty against defects. If you experience any issues, contact our support team with your order number.",
+    "question": "What do I need to make a warranty claim?",
+    "answer": {
+      "text": "All our products come with a manufacturer warranty that varies by product type.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_5",
+    "context": "We offer free standard shipping on orders over $50. Standard shipping takes 3-5 business days. Express shipping costs $15.99 and takes 1-2 business days. Overnight shipping is available for $29.99. International shipping is available to most countries and takes 7-14 business days. You can track your order using the tracking number sent to your email.",
+    "question": "When is shipping free?",
+    "answer": {
+      "text": "orders over $50",
+      "answer_start": 35
+    }
+  },
+  {
+    "id": "ecomm_11",
+    "context": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover. We also accept PayPal, Apple Pay, Google Pay, and Shop Pay. Payment is processed securely through our encrypted checkout system. For orders over $500, we may require additional verification for security purposes.",
+    "question": "Is payment processing secure?",
+    "answer": {
+      "text": "We accept all major credit cards including Visa, MasterCard, American Express, and Discover.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_23",
+    "context": "You can create an account during checkout or from our homepage by clicking 'Sign Up'. Account benefits include faster checkout, order tracking, exclusive member deals, and saved addresses. If you forget your password, click 'Forgot Password' on the login page and we'll send reset instructions to your email.",
+    "question": "Can I track orders with an account?",
+    "answer": {
+      "text": "You can create an account during checkout or from our homepage by clicking 'Sign Up'.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_35",
+    "context": "Order modifications can be made within 30 minutes of placing the order. After that, the order enters processing and cannot be changed. To modify an order, log into your account and click 'Modify Order' if available, or contact customer service immediately. Cancellations are possible until the item ships.",
+    "question": "Can I change my order after placing it?",
+    "answer": {
+      "text": "Order modifications can be made within 30 minutes of placing the order.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_6",
+    "context": "We offer free standard shipping on orders over $50. Standard shipping takes 3-5 business days. Express shipping costs $15.99 and takes 1-2 business days. Overnight shipping is available for $29.99. International shipping is available to most countries and takes 7-14 business days. You can track your order using the tracking number sent to your email.",
+    "question": "How long does standard shipping take?",
+    "answer": {
+      "text": "3-5 business days",
+      "answer_start": 76
+    }
+  },
+  {
+    "id": "ecomm_2",
+    "context": "Our return policy allows customers to return items within 30 days of purchase. Items must be in original condition with tags attached. Electronics must include all original accessories and packaging. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a return, log into your account and click 'Return Item' next to your order.",
+    "question": "How long do refunds take?",
+    "answer": {
+      "text": "Our return policy allows customers to return items within 30 days of purchase.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_28",
+    "context": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts. New customers get 10% off their first order when they sign up for our newsletter. Students get 15% off with a valid .edu email address. Military personnel receive a 10% discount with ID verification. Check our homepage for current promotions.",
+    "question": "Where can I find current promotions?",
+    "answer": {
+      "text": "We regularly offer seasonal sales, flash deals, and exclusive newsletter discounts.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_32",
+    "context": "Our customer service team is available 24/7 through live chat, email, and phone. Live chat is the fastest way to get help and is available on every page. Email support typically responds within 2 hours during business days. For urgent issues, call our toll-free number. We also have an extensive FAQ section and video tutorials.",
+    "question": "How quickly do you respond to emails?",
+    "answer": {
+      "text": "Our customer service team is available 24/7 through live chat, email, and phone.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_1",
+    "context": "Our return policy allows customers to return items within 30 days of purchase. Items must be in original condition with tags attached. Electronics must include all original accessories and packaging. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a return, log into your account and click 'Return Item' next to your order.",
+    "question": "What condition must items be in for returns?",
+    "answer": {
+      "text": "Our return policy allows customers to return items within 30 days of purchase.",
+      "answer_start": 0
+    }
+  }
+]

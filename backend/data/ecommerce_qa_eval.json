@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ecomm_36",
+    "context": "Order modifications can be made within 30 minutes of placing the order. After that, the order enters processing and cannot be changed. To modify an order, log into your account and click 'Modify Order' if available, or contact customer service immediately. Cancellations are possible until the item ships.",
+    "question": "How long do I have to modify an order?",
+    "answer": {
+      "text": "Order modifications can be made within 30 minutes of placing the order.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_38",
+    "context": "Order modifications can be made within 30 minutes of placing the order. After that, the order enters processing and cannot be changed. To modify an order, log into your account and click 'Modify Order' if available, or contact customer service immediately. Cancellations are possible until the item ships.",
+    "question": "What if my order is already processing?",
+    "answer": {
+      "text": "Order modifications can be made within 30 minutes of placing the order.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_18",
+    "context": "All our products come with a manufacturer warranty that varies by product type. Electronics typically have a 1-year warranty. Clothing and accessories have a 90-day quality guarantee. Furniture comes with a 2-year warranty against defects. If you experience any issues, contact our support team with your order number.",
+    "question": "How long is furniture covered?",
+    "answer": {
+      "text": "All our products come with a manufacturer warranty that varies by product type.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_47",
+    "context": "Product reviews help other customers make informed decisions. You can leave a review 3 days after your order is delivered. Reviews must be honest and based on your experience with the product. We don't allow fake reviews and may remove reviews that violate our guidelines. Verified purchase reviews are marked with a special badge.",
+    "question": "Are fake reviews allowed?",
+    "answer": {
+      "text": "Product reviews help other customers make informed decisions.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_46",
+    "context": "Product reviews help other customers make informed decisions. You can leave a review 3 days after your order is delivered. Reviews must be honest and based on your experience with the product. We don't allow fake reviews and may remove reviews that violate our guidelines. Verified purchase reviews are marked with a special badge.",
+    "question": "What makes a review verified?",
+    "answer": {
+      "text": "Product reviews help other customers make informed decisions.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_20",
+    "context": "You can create an account during checkout or from our homepage by clicking 'Sign Up'. Account benefits include faster checkout, order tracking, exclusive member deals, and saved addresses. If you forget your password, click 'Forgot Password' on the login page and we'll send reset instructions to your email.",
+    "question": "How do I create an account?",
+    "answer": {
+      "text": "You can create an account during checkout or from our homepage by clicking 'Sign Up'.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_31",
+    "context": "Our customer service team is available 24/7 through live chat, email, and phone. Live chat is the fastest way to get help and is available on every page. Email support typically responds within 2 hours during business days. For urgent issues, call our toll-free number. We also have an extensive FAQ section and video tutorials.",
+    "question": "Is live chat available 24/7?",
+    "answer": {
+      "text": "Our customer service team is available 24/7 through live chat, email, and phone.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_22",
+    "context": "You can create an account during checkout or from our homepage by clicking 'Sign Up'. Account benefits include faster checkout, order tracking, exclusive member deals, and saved addresses. If you forget your password, click 'Forgot Password' on the login page and we'll send reset instructions to your email.",
+    "question": "How do I reset my password?",
+    "answer": {
+      "text": "You can create an account during checkout or from our homepage by clicking 'Sign Up'.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_4",
+    "context": "Our return policy allows customers to return items within 30 days of purchase. Items must be in original condition with tags attached. Electronics must include all original accessories and packaging. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a return, log into your account and click 'Return Item' next to your order.",
+    "question": "Do electronics need original packaging for returns?",
+    "answer": {
+      "text": "Our return policy allows customers to return items within 30 days of purchase.",
+      "answer_start": 0
+    }
+  },
+  {
+    "id": "ecomm_30",
+    "context": "Our customer service team is available 24/7 through live chat, email, and phone. Live chat is the fastest way to get help and is available on every page. Email support typically responds within 2 hours during business days. For urgent issues, call our toll-free number. We also have an extensive FAQ section and video tutorials.",
+    "question": "How can I contact customer service?",
+    "answer": {
+      "text": "Our customer service team is available 24/7 through live chat, email, and phone.",
+      "answer_start": 0
+    }
+  }
+]
