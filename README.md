@@ -1,5 +1,7 @@
  # HelpBubble - E-commerce Customer Support Chatbot
 
+ https://help-bubble.vercel.app/
+
 ## Overview
 Built for researching Natural Language Processing. An intelligent customer support chatbot powered by transformer-based question answering models. Built with FastAPI backend and React frontend.
 
@@ -138,7 +140,8 @@ print(response.json())
 
 ## 🚀 Deployment
 
-TODO
+Backend deployed via Render
+Frontend deployed via Vercel.
 
 ## 📊 Knowledge Base
 The system includes pre-built knowledge for:
