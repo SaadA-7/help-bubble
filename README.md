@@ -95,6 +95,30 @@ npm start
 ```
 - The frontend will be available at http://localhost:3000
 
+## **IF** Docker setup:
+
+### Prerequisites
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+Adjust the parameters to your specific pull:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+```
+
+2. Build and run with Docker
+```bash
+docker-compose up --build
+```
+3. Access:
+**Frontend**: http://localhost:3000
+**Backend**: http://localhost:8000
+
+
 ### Model Evaluation
 Ensure venv script is active in backend.
 Run the evaluation script to test model performance:
