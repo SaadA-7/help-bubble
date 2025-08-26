@@ -2,6 +2,12 @@
 
  https://help-bubble.vercel.app/
 
+
+**If not accessed recently ensure you wake up the backend via Render to connect to the frontend**
+**Please be patient it may take 2-3 minutes via Render's free tier**
+Render Backend: https://help-bubble-api.onrender.com
+
+
 ## Overview
 Built for researching Natural Language Processing. An intelligent customer support chatbot powered by transformer-based question answering models. Built with FastAPI backend and React frontend.
 
@@ -12,6 +18,8 @@ Built for researching Natural Language Processing. An intelligent customer suppo
 - Performance Metrics: Tracks confidence scores, response times, and accuracy
 - RESTful API: FastAPI backend with automatic documentation
 - Production Ready: Configured for deployment on Render and Vercel
+  - **If not accessed recently ensure you wake up the backend via Render to connect to the frontend**
+  - **Clone and open frontend/backend in seperate terminals for quick experimentation**
 
 ### Backend
 - FastAPI - Modern Python web framework
